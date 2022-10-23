@@ -20,6 +20,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.owogirl300.dumbmod.block.ModBlocks;
 import net.owogirl300.dumbmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -35,6 +36,8 @@ public class DumbMod{
 
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);

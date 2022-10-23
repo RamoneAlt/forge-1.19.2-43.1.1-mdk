@@ -1,4 +1,11 @@
 {
   "item.dumbmod.zircon": "Zircon",
-  "item.dumbmod.raw_zircon": "Raw Zircon"
+  "item.dumbmod.raw_zircon": "Raw Zircon",
+
+  "block.dumbmod.zircon_block": "Block of Zircon",
+  "block.dumbmod.zircon_ore": "Zircon Ore",
+  "block.dumbmod.deepslate_zircon_ore": "Deepslate Zircon Ore",
+
+  "itemGroup.dumbtab": "Misc Dumb Tab",
+
 }
