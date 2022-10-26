@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "dumbmod:block/zircon_block"
+    "all": "dumbmod:block/arowqua_brick"
   }
 }

@@ -37,6 +37,10 @@ public class ModBlocks {
                     .strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(2, 6)), ModCreativeModeTab.DUMB_TAB);
 
+    public static final RegistryObject<Block> AROWQUA_BRICK = registerBlock("arowqua_brick",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f)), ModCreativeModeTab.DUMB_TAB);
+
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
