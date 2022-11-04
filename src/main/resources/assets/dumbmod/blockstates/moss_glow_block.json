@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": { "model": "dumbmod:block/moss_glow_block_off" },
+    "lit=true": { "model": "dumbmod:block/moss_glow_block_on" }
+  }
+}

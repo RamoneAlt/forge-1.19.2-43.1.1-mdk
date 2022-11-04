@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "dumbmod:marble_block",
+    "dumbmod:polished_marble_block",
+    "dumbmod:marble_bricks",
+    "dumbmod:arowqua_brick",
+    "dumbmod:end_dirt",
+    "dumbmod:brown_quartz_block",
+    "dumbmod:moss_glow_block"
+
+  ]
+}

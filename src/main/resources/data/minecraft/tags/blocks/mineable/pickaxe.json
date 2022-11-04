@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "dumbmod:marble_ore",
+    "dumbmod:marble_block",
+    "dumbmod:deepslate_marble_ore",
+    "dumbmod:marble_bricks",
+    "dumbmod:arowqua_brick",
+    "dumbmod:polished_marble_block",
+    "dumbmod:brown_quartz_block"
+  ]
+}

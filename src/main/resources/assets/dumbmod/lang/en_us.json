@@ -1,11 +1,25 @@
 {
-  "item.dumbmod.zircon": "Zircon",
-  "item.dumbmod.raw_zircon": "Raw Zircon",
+  "item.dumbmod.marble": "Marble",
+  "item.dumbmod.raw_marble": "Raw Marble",
+  "item.dumbmod.eight_ball": "Eight Ball",
+  "item.dumbmod.garlic": "Garlic",
+  "item.dumbmod.garlic_seeds": "Garlic Sprout",
 
-  "block.dumbmod.zircon_block": "Block of Zircon",
-  "block.dumbmod.zircon_ore": "Zircon Ore",
-  "block.dumbmod.deepslate_zircon_ore": "Deepslate Zircon Ore",
+
+
+
+  "block.dumbmod.brown_quartz_block": "Brown Quartz Block",
+  "block.dumbmod.marble_block": "Block of Marble",
+  "block.dumbmod.polished_marble_block": "Polished Marble Block",
+  "block.dumbmod.marble_bricks": "Marble Bricks",
+  "block.dumbmod.marble_ore": "Marble Ore",
+  "block.dumbmod.deepslate_marble_ore": "Deepslate Marble Ore",
   "block.dumbmod.arowqua_brick": "Arowqua Bricks",
+  "block.dumbmod.end_dirt": "End Soil",
+  "block.dumbmod.jumpy_block": "Jumpy Block",
+  "block.dumbmod.moss_glow_block": "Glow Moss",
+  "block.dumbmod.garlic_crop": "Garlic Crop",
+
 
   "itemGroup.dumbtab": "Misc Dumb Tab"
 }

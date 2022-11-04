@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dumbmod:marble_block"
+    }
+  ],
+  "result": {
+    "item": "dumbmod:marble",
+    "count": 9
+  }
+}
