@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": { "model": "dumbmod:block/aquamarine_ore_off" },
+    "lit=true": { "model": "dumbmod:block/aquamarine_ore_on" }
+  }
+}

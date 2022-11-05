@@ -24,6 +24,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.owogirl300.dumbmod.block.ModBlocks;
 import net.owogirl300.dumbmod.item.ModItems;
+import net.owogirl300.dumbmod.world.feature.ModConfiguredFeatures;
+import net.owogirl300.dumbmod.world.feature.ModPlacedFeatures;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -42,7 +44,13 @@ public class DumbMod{
         ModBlocks.register(modEventBus);
 
 
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
+
+
         modEventBus.addListener(this::commonSetup);
+
+        ModConfiguredFeatures.register(modEventBus);
 
 
         MinecraftForge.EVENT_BUS.register(this);

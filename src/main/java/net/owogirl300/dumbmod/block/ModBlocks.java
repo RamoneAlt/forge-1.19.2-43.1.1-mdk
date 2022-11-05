@@ -15,6 +15,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.owogirl300.dumbmod.DumbMod;
+import net.owogirl300.dumbmod.block.custom.AquamarineOre;
 import net.owogirl300.dumbmod.block.custom.GarlicCropBlock;
 import net.owogirl300.dumbmod.block.custom.JumpyBlock;
 import net.owogirl300.dumbmod.block.custom.MossGlowBlock;
@@ -43,6 +44,11 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(4.7f).requiresCorrectToolForDrops(),
                     UniformInt.of(2, 4)), ModCreativeModeTab.DUMB_TAB);
+
+    public static final RegistryObject<Block> AQUAMARINE_ORE = registerBlock("aquamarine_ore",
+            () -> new AquamarineOre(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(1.6f).requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(AquamarineOre.LIT) ? 7 : 2 )), ModCreativeModeTab.DUMB_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_MARBLE_ORE = registerBlock("deepslate_marble_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
