@@ -26,7 +26,13 @@ public class ModPlacedFeatures {
 
     public static final RegistryObject<PlacedFeature> AQUAMARINE_ORE_PLACED = PLACED_FEATURES.register("aquamarine_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.AQUAMARINE_ORE.getHolder().get(),
-                    commonOrePlacement(21, // VeinsPerChunk
+                    commonOrePlacement(17, // VeinsPerChunk
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
+
+
+    public static final RegistryObject<PlacedFeature> TANZANITE_ORE_PLACED = PLACED_FEATURES.register("tanzanite_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.TANZANITE_ORE.getHolder().get(),
+                    commonOrePlacement(12, // VeinsPerChunk
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
 
     //public static final RegistryObject<PlacedFeature> AQUAMARINE_ORE_PLACED = PLACED_FEATURES.register("aquamarine_ore_placed",

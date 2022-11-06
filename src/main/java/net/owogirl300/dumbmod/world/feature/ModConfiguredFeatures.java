@@ -32,6 +32,8 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_MARBLE_ORE.get().defaultBlockState())));
         public static final Supplier<List<OreConfiguration.TargetBlockState>> END_AQUAMARINE_ORES = Suppliers.memoize(() -> List.of(
                OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), ModBlocks.AQUAMARINE_ORE.get().defaultBlockState())));
+    public static final Supplier<List<OreConfiguration.TargetBlockState>> END_TANZANITE_ORES = Suppliers.memoize(() -> List.of(
+            OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), ModBlocks.TANZANITE_ORE.get().defaultBlockState())));
        // public static final Supplier<List<OreConfiguration.TargetBlockState>> NETHER_ZIRCON_ORES = Suppliers.memoize(() -> List.of(
             //    OreConfiguration.target(OreFeatures.NETHER_ORE_REPLACEABLES, ModBlocks.NETHERRACK_ZIRCON_ORE//.get().defaultBlockState())));
 //replace these with other ores uwu
@@ -40,7 +42,9 @@ public class ModConfiguredFeatures {
                 () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_MARBLE_ORES.get(),7)));
 
           public static final RegistryObject<ConfiguredFeature<?, ?>> AQUAMARINE_ORE = CONFIGURED_FEATURES.register("aquamarine_ore",
-               () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_AQUAMARINE_ORES.get(), 9)));
+               () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_AQUAMARINE_ORES.get(), 6)));
+    public static final RegistryObject<ConfiguredFeature<?, ?>> TANZANITE_ORE = CONFIGURED_FEATURES.register("tanzanite_ore",
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_TANZANITE_ORES.get(), 9)));
     //    public static final RegistryObject<ConfiguredFeature<?, ?>> NETHER_ZIRCON_ORE = CONFIGURED_FEATURES.register("nether_zircon_ore",
            //     () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_ZIRCON_ORES.get(), 9)));
 

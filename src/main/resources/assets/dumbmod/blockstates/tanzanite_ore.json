@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": { "model": "dumbmod:block/tanzanite_ore_off" },
+    "lit=true": { "model": "dumbmod:block/tanzanite_ore_on" }
+  }
+}
