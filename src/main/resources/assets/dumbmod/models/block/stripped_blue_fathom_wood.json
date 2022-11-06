@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "dumbmod:block/stripped_blue_fathom_log",
+    "side": "dumbmod:block/stripped_blue_fathom_log"
+  }
+}

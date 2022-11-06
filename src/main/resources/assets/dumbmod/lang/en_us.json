@@ -23,5 +23,14 @@
   "block.dumbmod.garlic_crop": "Garlic Crop",
 
 
+  "block.dumbmod.blue_fathom_log": "Fathom Log",
+  "block.dumbmod.blue_fathom_planks": "Fathom Planks",
+  "block.dumbmod.blue_fathom_wood": "Fathom Wood",
+  "block.dumbmod.stripped_blue_fathom_log": "Stripped Fathom Log",
+  "block.dumbmod.stripped_blue_fathom_wood": "Stripped Fathom Wood",
+  "block.dumbmod.blue_fathom_leaves": "Fathom Leaves",
+  "block.dumbmod.blue_fathom_sapling": "Fathom Sapling",
+
+
   "itemGroup.dumbtab": "Misc Dumb Tab"
 }

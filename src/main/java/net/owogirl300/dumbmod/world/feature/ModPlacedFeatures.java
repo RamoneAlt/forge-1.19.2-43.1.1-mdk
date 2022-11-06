@@ -1,5 +1,7 @@
 package net.owogirl300.dumbmod.world.feature;
 
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.owogirl300.dumbmod.DumbMod;
 
 
@@ -9,6 +11,7 @@ import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
+import net.owogirl300.dumbmod.block.ModBlocks;
 import net.owogirl300.dumbmod.block.custom.AquamarineOre;
 
 import java.util.List;
@@ -38,6 +41,18 @@ public class ModPlacedFeatures {
     //public static final RegistryObject<PlacedFeature> AQUAMARINE_ORE_PLACED = PLACED_FEATURES.register("aquamarine_ore_placed",
     //     () -> new PlacedFeature(ModConfiguredFeatures.AQUAMARINE_ORE.getHolder().get(), commonOrePlacement(7, // VeinsPerChunk
      //         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
+
+
+
+    public static final RegistryObject<PlacedFeature> BLUE_FATHOM_CHECKED = PLACED_FEATURES.register("blue_fathom_checked",
+            () -> new PlacedFeature(ModConfiguredFeatures.BLUE_FATHOM.getHolder().get(),
+                    List.of(PlacementUtils.filteredByBlockSurvival(ModBlocks.BLUE_FATHOM_SAPLING.get()))));
+
+    public static final RegistryObject<PlacedFeature> BLUE_FATHOM_PLACED = PLACED_FEATURES.register("blue_fathom_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.BLUE_FATHOM_SPAWN.getHolder().get(), VegetationPlacements.treePlacement(
+                    PlacementUtils.countExtra(3, 0.1f, 2))));
+
+
 
 
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {

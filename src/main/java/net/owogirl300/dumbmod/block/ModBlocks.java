@@ -1,14 +1,16 @@
 package net.owogirl300.dumbmod.block;
 
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,6 +20,9 @@ import net.owogirl300.dumbmod.DumbMod;
 import net.owogirl300.dumbmod.block.custom.*;
 import net.owogirl300.dumbmod.item.ModCreativeModeTab;
 import net.owogirl300.dumbmod.item.ModItems;
+import net.owogirl300.dumbmod.world.feature.tree.BlueFathomTreeGrower;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 
 import java.util.function.Supplier;
 
@@ -80,6 +85,64 @@ public class ModBlocks {
             () -> new MossGlowBlock(BlockBehaviour.Properties.of(Material.SAND)
                     .strength(1.8f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(MossGlowBlock.LIT) ? 12 : 0 )), ModCreativeModeTab.DUMB_TAB);
+
+
+    //WOOD
+
+    public static final RegistryObject<Block> BLUE_FATHOM_LOG = registerBlock("blue_fathom_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+    public static final RegistryObject<Block> BLUE_FATHOM_WOOD = registerBlock("blue_fathom_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+    public static final RegistryObject<Block> STRIPPED_BLUE_FATHOM_LOG = registerBlock("stripped_blue_fathom_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+    public static final RegistryObject<Block> STRIPPED_BLUE_FATHOM_WOOD = registerBlock("stripped_blue_fathom_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+
+    public static final RegistryObject<Block> BLUE_FATHOM_PLANKS = registerBlock("blue_fathom_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .requiresCorrectToolForDrops()) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+            }, ModCreativeModeTab.DUMB_TAB);
+    public static final RegistryObject<Block> BLUE_FATHOM_LEAVES = registerBlock("blue_fathom_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
+                    .requiresCorrectToolForDrops()){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+            }, ModCreativeModeTab.DUMB_TAB);
+
+    public static final RegistryObject<Block> BLUE_FATHOM_SAPLING = registerBlock("blue_fathom_sapling",
+            () -> new SaplingBlock(new BlueFathomTreeGrower(),
+                    BlockBehaviour.Properties.copy(Blocks.CHORUS_FLOWER)), ModCreativeModeTab.DUMB_TAB);
+
 
 
 

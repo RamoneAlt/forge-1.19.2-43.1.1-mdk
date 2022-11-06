@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "dumbmod:block/blue_fathom_sapling"
+  },
+  "render_type": "cutout"
+}
