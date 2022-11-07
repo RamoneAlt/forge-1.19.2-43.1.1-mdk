@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -86,6 +87,12 @@ public class ModBlocks {
                     .strength(1.8f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(MossGlowBlock.LIT) ? 12 : 0 )), ModCreativeModeTab.DUMB_TAB);
 
+    public static final RegistryObject<Block> MOON_CRUST_BLOCK = registerBlock("moon_crust_block",
+            () -> new MoonCrustBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(1.7f).requiresCorrectToolForDrops()
+                    ), ModCreativeModeTab.DUMB_TAB);
+
+
 
     //WOOD
 
@@ -141,7 +148,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BLUE_FATHOM_SAPLING = registerBlock("blue_fathom_sapling",
             () -> new SaplingBlock(new BlueFathomTreeGrower(),
-                    BlockBehaviour.Properties.copy(Blocks.CHORUS_FLOWER)), ModCreativeModeTab.DUMB_TAB);
+                    BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTab.DUMB_TAB);
 
 
 

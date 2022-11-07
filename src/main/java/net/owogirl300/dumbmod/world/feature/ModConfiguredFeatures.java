@@ -42,6 +42,9 @@ public class ModConfiguredFeatures {
                OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), ModBlocks.AQUAMARINE_ORE.get().defaultBlockState())));
     public static final Supplier<List<OreConfiguration.TargetBlockState>> END_TANZANITE_ORES = Suppliers.memoize(() -> List.of(
             OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), ModBlocks.TANZANITE_ORE.get().defaultBlockState())));
+
+    public static final Supplier<List<OreConfiguration.TargetBlockState>> END_MOON_CRUST_BLOCKS = Suppliers.memoize(() -> List.of(
+            OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), ModBlocks.MOON_CRUST_BLOCK.get().defaultBlockState())));
        // public static final Supplier<List<OreConfiguration.TargetBlockState>> NETHER_ZIRCON_ORES = Suppliers.memoize(() -> List.of(
             //    OreConfiguration.target(OreFeatures.NETHER_ORE_REPLACEABLES, ModBlocks.NETHERRACK_ZIRCON_ORE//.get().defaultBlockState())));
 //replace these with other ores uwu
@@ -53,6 +56,8 @@ public class ModConfiguredFeatures {
                () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_AQUAMARINE_ORES.get(), 6)));
     public static final RegistryObject<ConfiguredFeature<?, ?>> TANZANITE_ORE = CONFIGURED_FEATURES.register("tanzanite_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_TANZANITE_ORES.get(), 9)));
+    public static final RegistryObject<ConfiguredFeature<?, ?>> MOON_CRUST_BLOCK = CONFIGURED_FEATURES.register("moon_crust_block",
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_MOON_CRUST_BLOCKS.get(), 19)));
     //    public static final RegistryObject<ConfiguredFeature<?, ?>> NETHER_ZIRCON_ORE = CONFIGURED_FEATURES.register("nether_zircon_ore",
            //     () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_ZIRCON_ORES.get(), 9)));
 

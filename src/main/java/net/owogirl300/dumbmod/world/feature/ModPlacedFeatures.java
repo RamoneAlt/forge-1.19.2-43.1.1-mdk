@@ -29,13 +29,19 @@ public class ModPlacedFeatures {
 
     public static final RegistryObject<PlacedFeature> AQUAMARINE_ORE_PLACED = PLACED_FEATURES.register("aquamarine_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.AQUAMARINE_ORE.getHolder().get(),
-                    commonOrePlacement(17, // VeinsPerChunk
+                    commonOrePlacement(15, // VeinsPerChunk
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
 
+    public static final RegistryObject<PlacedFeature> MOON_CRUST_BLOCK_PLACED = PLACED_FEATURES.register("moon_crust_block_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.MOON_CRUST_BLOCK.getHolder().get(),
+                    commonOrePlacement(11, // VeinsPerChunk
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
+
+//Moon Crust hurts when walked on-- Add other harmful blocks to generate
 
     public static final RegistryObject<PlacedFeature> TANZANITE_ORE_PLACED = PLACED_FEATURES.register("tanzanite_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.TANZANITE_ORE.getHolder().get(),
-                    commonOrePlacement(12, // VeinsPerChunk
+                    commonOrePlacement(8, // VeinsPerChunk
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
 
     //public static final RegistryObject<PlacedFeature> AQUAMARINE_ORE_PLACED = PLACED_FEATURES.register("aquamarine_ore_placed",
