@@ -13,12 +13,14 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
+import net.owogirl300.dumbmod.fluid.ModFluids;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.owogirl300.dumbmod.DumbMod;
 import net.owogirl300.dumbmod.block.custom.*;
+import net.minecraft.world.level.block.LiquidBlock;
 import net.owogirl300.dumbmod.item.ModCreativeModeTab;
 import net.owogirl300.dumbmod.item.ModItems;
 import net.owogirl300.dumbmod.world.feature.tree.BlueFathomTreeGrower;
@@ -79,6 +81,8 @@ public class ModBlocks {
             () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
 
+    public static final RegistryObject<LiquidBlock> ACID_BLOCK = BLOCKS.register("acid_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_ACID, BlockBehaviour.Properties.copy(Blocks.LAVA)));
     public static final RegistryObject<Block> GARLIC_CROP = BLOCKS.register("garlic_crop",
             () -> new GarlicCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 

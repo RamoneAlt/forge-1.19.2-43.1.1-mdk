@@ -2,14 +2,17 @@ package net.owogirl300.dumbmod.item;
 
 
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.owogirl300.dumbmod.DumbMod;
 import net.owogirl300.dumbmod.block.ModBlocks;
+import net.owogirl300.dumbmod.fluid.ModFluids;
 import net.owogirl300.dumbmod.item.custom.EightBallItem;
 
 public class ModItems {
@@ -32,6 +35,12 @@ public class ModItems {
     public static final RegistryObject<Item> GARLIC = ITEMS.register( "garlic",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB)
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())));
+
+    public static final RegistryObject<Item> ACID_BUCKET = ITEMS.register("acid_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_ACID,
+                    new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB).craftRemainder(Items.BUCKET).stacksTo(1)));
+
+
 
 
 
