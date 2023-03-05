@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#forge:is_end",
+  "biomes": "#forge:is_plains",
   "features": "dumbmod:blue_fathom_placed",
   "step": "vegetal_decoration"
 }

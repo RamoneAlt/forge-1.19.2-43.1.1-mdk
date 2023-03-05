@@ -68,7 +68,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> BROWN_QUARTZ_BLOCK = registerBlock("brown_quartz_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(2.1f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
-
+    public static final RegistryObject<Block> BROWN_QUARTZ_BRICKS = registerBlock("brown_quartz_bricks",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(2.1f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
     public static final RegistryObject<Block> AROWQUA_BRICK = registerBlock("arowqua_brick",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f)), ModCreativeModeTab.DUMB_TAB);
