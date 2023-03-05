@@ -36,6 +36,13 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB)
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())));
 
+    public static final RegistryObject<Item> BLACKCURRANT = ITEMS.register( "blackcurrant",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB)
+                    .food(new FoodProperties.Builder().nutrition(1).saturationMod(3f).build())));
+
+    public static final RegistryObject<Item> BLACKCURRANT_SEEDS = ITEMS.register( "blackcurrant_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.BLACKCURRANT_CROP.get(), new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB).stacksTo(64)));
+
     public static final RegistryObject<Item> ACID_BUCKET = ITEMS.register("acid_bucket",
             () -> new BucketItem(ModFluids.SOURCE_ACID,
                     new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB).craftRemainder(Items.BUCKET).stacksTo(1)));

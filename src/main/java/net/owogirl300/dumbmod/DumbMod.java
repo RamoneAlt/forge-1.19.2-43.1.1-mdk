@@ -73,6 +73,7 @@ public class DumbMod{
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_ACID.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_ACID.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.GARLIC_CROP.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLACKCURRANT_CROP.get(), RenderType.cutout());
         }
     }
 }

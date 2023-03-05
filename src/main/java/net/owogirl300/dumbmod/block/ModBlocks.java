@@ -87,6 +87,8 @@ public class ModBlocks {
             () -> new LiquidBlock(ModFluids.SOURCE_ACID, BlockBehaviour.Properties.copy(Blocks.LAVA)));
     public static final RegistryObject<Block> GARLIC_CROP = BLOCKS.register("garlic_crop",
             () -> new GarlicCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+    public static final RegistryObject<Block> BLACKCURRANT_CROP = BLOCKS.register("blackcurrant_crop",
+            () -> new BlackcurrantCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
     public static final RegistryObject<Block> MOSS_GLOW_BLOCK = registerBlock("moss_glow_block",
             () -> new MossGlowBlock(BlockBehaviour.Properties.of(Material.SAND)
