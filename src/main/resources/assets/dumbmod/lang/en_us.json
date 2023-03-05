@@ -6,6 +6,7 @@
   "item.dumbmod.garlic_seeds": "Garlic Sprout",
   "item.dumbmod.blackcurrant": "Blackcurrant",
   "item.dumbmod.blackcurrant_seeds": "Blackcurrant Seeds",
+  "item.dumbmod.acid_bucket": "Bucket of Acid",
 
 
 
@@ -36,5 +37,5 @@
   "block.dumbmod.blue_fathom_sapling": "Fathom Sapling",
 
 
-  "itemGroup.dumbtab": "Misc Dumb Tab"
+  "itemGroup.dumbtab": "Dumbmod"
 }
