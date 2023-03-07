@@ -9,6 +9,14 @@
   "item.dumbmod.acid_bucket": "Bucket of Acid",
   "item.dumbmod.pig_block_chunk": "Meat Chunk",
 
+  /* Reinforced Meat Tools */
+
+  "item.dumbmod.reinforcedmeat_pickaxe": "Reinforced Meat Pickaxe",
+  "item.dumbmod.reinforcedmeat_axe": "Reinforced Meat Axe",
+  "item.dumbmod.reinforcedmeat_shovel": "Reinforced Meat Shovel",
+  "item.dumbmod.reinforcedmeat_hoe": "Reinforced Meat Hoe",
+  "item.dumbmod.reinforcedmeat_sword": "Reinforced Meat Sword",
+
 
   /* Meat blocks */
 

@@ -3,6 +3,7 @@ package net.owogirl300.dumbmod.item;
 
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BucketItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Items;
@@ -52,8 +53,10 @@ public class ModItems {
             () -> new BucketItem(ModFluids.SOURCE_ACID,
                     new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB).craftRemainder(Items.BUCKET).stacksTo(1)));
 
-
-
+    // Meat sword
+    public static final RegistryObject<Item> REINFORCEDMEAT_SWORD = ITEMS.register("reinforcedmeat_sword",
+            () -> new SwordItem(ModTiers.REINFORCEDMEAT, 2, 3f,
+                    new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB)));
 
 
 
