@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 325,
+  "experience": 2.1,
+  "group": "cooked_pig_block",
+  "ingredient": {
+    "item": "dumbmod:raw_pig_block"
+  },
+  "result": "dumbmod:cooked_pig_block"
+}

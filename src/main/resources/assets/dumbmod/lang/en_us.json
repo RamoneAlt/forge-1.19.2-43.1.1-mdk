@@ -12,6 +12,7 @@
   /* Meat blocks */
 
   "block.dumbmod.raw_pig_block": "Raw Pig Block",
+  "block.dumbmod.cooked_pig_block": "Cooked Pig Block",
 
 
   "block.dumbmod.brown_quartz_block": "Brown Quartz Block",
