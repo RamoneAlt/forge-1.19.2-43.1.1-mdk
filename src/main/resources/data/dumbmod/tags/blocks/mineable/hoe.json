@@ -2,8 +2,5 @@
   "replace": false,
   "values": [
     "dumbmod:moss_glow_block",
-    "dumbmod:raw_pig_block",
-    "dumbmod:cooked_pig_block"
-
   ]
 }

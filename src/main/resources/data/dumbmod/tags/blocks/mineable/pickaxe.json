@@ -11,6 +11,8 @@
     "dumbmod:brown_quartz_bricks",
     "dumbmod:aquamarine_ore",
     "dumbmod:tanzanite_ore",
-    "dumbmod:moon_crust_block"
+    "dumbmod:moon_crust_block",
+    "dumbmod:raw_pig_block",
+    "dumbmod:cooked_pig_block"
   ]
 }

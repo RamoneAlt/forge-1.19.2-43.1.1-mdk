@@ -84,12 +84,21 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
 
             // Start of Meat blocks section
+  //  public static final RegistryObject<Block> RAW_PIG_BLOCK = registerBlock("raw_pig_block",
+     //       () -> new RawPigBlock(BlockBehaviour.Properties.of(Material.STONE)
+       //             .strength(0.6f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+
     public static final RegistryObject<Block> RAW_PIG_BLOCK = registerBlock("raw_pig_block",
-            () -> new RawPigBlock(BlockBehaviour.Properties.of(Material.DIRT)
-                    .strength(0.6f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+            () -> new RawPigBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.4f)), ModCreativeModeTab.DUMB_TAB);
+
     public static final RegistryObject<Block> COOKED_PIG_BLOCK = registerBlock("cooked_pig_block",
-            () -> new CookedPigBlock(BlockBehaviour.Properties.of(Material.DIRT)
-                    .strength(0.8f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+            () -> new CookedPigBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.4f)), ModCreativeModeTab.DUMB_TAB);
+
+   // public static final RegistryObject<Block> COOKED_PIG_BLOCK = registerBlock("cooked_pig_block",
+     //       () -> new CookedPigBlock(BlockBehaviour.Properties.of(Material.STONE)
+        //            .strength(0.6f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
 
 
     public static final RegistryObject<LiquidBlock> ACID_BLOCK = BLOCKS.register("acid_block",

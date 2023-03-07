@@ -36,6 +36,11 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB)
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())));
 
+
+    public static final RegistryObject<Item> PIG_BLOCK_CHUNK = ITEMS.register( "pig_block_chunk",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB)
+                    .food(new FoodProperties.Builder().nutrition(12).saturationMod(3f).build())));
+
     public static final RegistryObject<Item> BLACKCURRANT = ITEMS.register( "blackcurrant",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB)
                     .food(new FoodProperties.Builder().nutrition(1).saturationMod(3f).build())));
