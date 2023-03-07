@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "///",
+    "/#/",
+    "///"
+  ],
+  "key": {
+
+    "#": {
+      "item": "dumbmod:raw_pig_block"
+    },
+
+  "/": {
+    "item": "minecraft:iron_ingot"
+  }
+},
+  "result": {
+    "item": "dumbmod:reinforced_meat_block"
+  }
+}

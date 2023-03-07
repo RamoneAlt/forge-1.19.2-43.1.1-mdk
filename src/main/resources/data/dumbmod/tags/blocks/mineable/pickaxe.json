@@ -13,6 +13,7 @@
     "dumbmod:tanzanite_ore",
     "dumbmod:moon_crust_block",
     "dumbmod:raw_pig_block",
-    "dumbmod:cooked_pig_block"
+    "dumbmod:cooked_pig_block",
+    "dumbmod:reinforced_meat_block"
   ]
 }

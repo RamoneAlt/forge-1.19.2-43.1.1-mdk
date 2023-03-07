@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "/"
+  ],
+  "key": {
+
+    "#": {
+      "item": "dumbmod:reinforced_meat_block"
+    },
+
+  "/": {
+    "item": "minecraft:stick"
+  }
+},
+  "result": {
+    "item": "dumbmod:reinforcedmeat_sword"
+  }
+}
