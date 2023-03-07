@@ -82,6 +82,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
             () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(2f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+            // Start of Meat blocks section
+    public static final RegistryObject<Block> RAW_PIG_BLOCK = registerBlock("raw_pig_block",
+            () -> new RawPigBlock(BlockBehaviour.Properties.of(Material.DIRT)
+                    .strength(0.6f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
 
     public static final RegistryObject<LiquidBlock> ACID_BLOCK = BLOCKS.register("acid_block",
             () -> new LiquidBlock(ModFluids.SOURCE_ACID, BlockBehaviour.Properties.copy(Blocks.LAVA)));
@@ -92,8 +96,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MOSS_GLOW_BLOCK = registerBlock("moss_glow_block",
             () -> new MossGlowBlock(BlockBehaviour.Properties.of(Material.SAND)
-                    .strength(1.8f).requiresCorrectToolForDrops()
-                    .lightLevel(state -> state.getValue(MossGlowBlock.LIT) ? 12 : 0 )), ModCreativeModeTab.DUMB_TAB);
+                    .strength(1.2f).requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(MossGlowBlock.LIT) ? 7 : 0 )), ModCreativeModeTab.DUMB_TAB);
 
     public static final RegistryObject<Block> MOON_CRUST_BLOCK = registerBlock("moon_crust_block",
             () -> new MoonCrustBlock(BlockBehaviour.Properties.of(Material.STONE)

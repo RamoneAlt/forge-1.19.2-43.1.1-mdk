@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+
+    "#": {
+      "item": "minecraft:porkchop"
+    }
+},
+  "result": {
+    "item": "dumbmod:raw_pig_block"
+  }
+}

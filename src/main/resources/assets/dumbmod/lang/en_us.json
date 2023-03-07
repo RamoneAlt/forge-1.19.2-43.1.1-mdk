@@ -9,6 +9,9 @@
   "item.dumbmod.acid_bucket": "Bucket of Acid",
 
 
+  /* Meat blocks */
+
+  "block.dumbmod.raw_pig_block": "Raw Pig Block",
 
 
   "block.dumbmod.brown_quartz_block": "Brown Quartz Block",
