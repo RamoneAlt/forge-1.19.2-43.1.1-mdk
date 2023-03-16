@@ -15,6 +15,7 @@ import net.owogirl300.dumbmod.DumbMod;
 import net.owogirl300.dumbmod.block.ModBlocks;
 import net.owogirl300.dumbmod.fluid.ModFluids;
 import net.owogirl300.dumbmod.item.custom.EightBallItem;
+import net.owogirl300.dumbmod.item.custom.RawPigBlockChunk;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -39,8 +40,8 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> PIG_BLOCK_CHUNK = ITEMS.register( "pig_block_chunk",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB)
-                    .food(new FoodProperties.Builder().nutrition(12).saturationMod(3f).build())));
+            () -> new RawPigBlockChunk(new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB)
+                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(2.6f).build())));
 
     public static final RegistryObject<Item> BLACKCURRANT = ITEMS.register( "blackcurrant",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB)

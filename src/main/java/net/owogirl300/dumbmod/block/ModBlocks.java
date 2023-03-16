@@ -103,6 +103,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLACKCURRANT_CROP = BLOCKS.register("blackcurrant_crop",
             () -> new BlackcurrantCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
+    public static final RegistryObject<Block> WEATHERED_MARBLE_BRICKS = registerBlock("weathered_marble_bricks",
+            () -> new MarbleBrickBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+
     public static final RegistryObject<Block> MOSS_GLOW_BLOCK = registerBlock("moss_glow_block",
             () -> new MossGlowBlock(BlockBehaviour.Properties.of(Material.SAND)
                     .strength(1.2f).requiresCorrectToolForDrops()

@@ -15,7 +15,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-
 public class MoonCrustBlock extends Block {
 
     public MoonCrustBlock(BlockBehaviour.Properties p_54800_) {
@@ -42,6 +41,7 @@ public class MoonCrustBlock extends Block {
     public void onPlace(BlockState p_54823_, Level p_54824_, BlockPos p_54825_, BlockState p_54826_, boolean p_54827_) {
         p_54824_.scheduleTick(p_54825_, this, 20);
     }
+
 }
 
 
