@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "dumbmod:block/weathered_marble_bricks_stage0"
-  }
-}

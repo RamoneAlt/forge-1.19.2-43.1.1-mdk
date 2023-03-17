@@ -45,6 +45,19 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
 
+    public static final RegistryObject<Block> WEATHERED_MARBLE_BRICKS_STONE = registerBlock("weathered_marble_bricks_stone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+    public static final RegistryObject<Block> WEATHERED_MARBLE_BRICKS_STTWO = registerBlock("weathered_marble_bricks_sttwo",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+
+    public static final RegistryObject<Block> MARBLE_BUTTON = registerBlock("marble_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(3f).requiresCorrectToolForDrops().noCollission()), ModCreativeModeTab.DUMB_TAB);
+
+
+
     public static final RegistryObject<Block> MARBLE_ORE = registerBlock("marble_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(4.7f).requiresCorrectToolForDrops(),
@@ -75,6 +88,10 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f)), ModCreativeModeTab.DUMB_TAB);
 
+
+
+
+
     public static final RegistryObject<Block> END_DIRT = registerBlock("end_dirt",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.DIRT)
                     .strength(1f)), ModCreativeModeTab.DUMB_TAB);
@@ -102,10 +119,6 @@ public class ModBlocks {
             () -> new GarlicCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
     public static final RegistryObject<Block> BLACKCURRANT_CROP = BLOCKS.register("blackcurrant_crop",
             () -> new BlackcurrantCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
-
-    public static final RegistryObject<Block> WEATHERED_MARBLE_BRICKS = registerBlock("weathered_marble_bricks",
-            () -> new MarbleBrickBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
 
     public static final RegistryObject<Block> MOSS_GLOW_BLOCK = registerBlock("moss_glow_block",
             () -> new MossGlowBlock(BlockBehaviour.Properties.of(Material.SAND)

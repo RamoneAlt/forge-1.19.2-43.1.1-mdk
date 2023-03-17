@@ -1,0 +1,6 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "texture": "dumbmod:block/marble_bricks"
+  }
+}

@@ -6,6 +6,7 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
+import net.owogirl300.dumbmod.painting.ModPaintings;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.owogirl300.dumbmod.fluid.ModFluidTypes;
@@ -45,8 +46,11 @@ public class DumbMod{
 
         ModBlocks.register(modEventBus);
 
+        ModPaintings.register(modEventBus);
+
 
         ModConfiguredFeatures.register(modEventBus);
+
         ModPlacedFeatures.register(modEventBus);
 
         ModFluids.register(modEventBus);

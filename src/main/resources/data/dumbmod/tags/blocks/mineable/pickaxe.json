@@ -14,6 +14,8 @@
     "dumbmod:moon_crust_block",
     "dumbmod:raw_pig_block",
     "dumbmod:cooked_pig_block",
-    "dumbmod:reinforced_meat_block"
+    "dumbmod:reinforced_meat_block",
+    "dumbmod:weathered_marble_bricks_stone",
+    "dumbmod:weathered_marble_bricks_sttwo"
   ]
 }

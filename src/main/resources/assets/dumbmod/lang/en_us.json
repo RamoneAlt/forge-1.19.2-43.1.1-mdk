@@ -27,11 +27,6 @@
 
   "block.dumbmod.brown_quartz_block": "Brown Quartz Block",
   "block.dumbmod.brown_quartz_bricks": "Brown Quartz Bricks",
-  "block.dumbmod.marble_block": "Block of Marble",
-  "block.dumbmod.polished_marble_block": "Polished Marble Block",
-  "block.dumbmod.marble_bricks": "Marble Bricks",
-  "block.dumbmod.marble_ore": "Marble Ore",
-  "block.dumbmod.deepslate_marble_ore": "Deepslate Marble Ore",
   "block.dumbmod.arowqua_brick": "Arowqua Bricks",
   "block.dumbmod.end_dirt": "End Soil",
   "block.dumbmod.jumpy_block": "Jumpy Block",
@@ -40,6 +35,18 @@
   "block.dumbmod.tanzanite_ore": "Tanzanite Ore",
   "block.dumbmod.garlic_crop": "Garlic Crop",
   "block.dumbmod.moon_crust_block": "Moonstone Crust",
+
+  /* Marble Blocks */
+
+  "block.dumbmod.marble_button": "Marble Button",
+  "block.dumbmod.marble_ore": "Marble Ore",
+  "block.dumbmod.deepslate_marble_ore": "Deepslate Marble Ore",
+  "block.dumbmod.marble_block": "Block of Marble",
+  "block.dumbmod.marble_bricks": "Marble Bricks",
+  "block.dumbmod.polished_marble_block": "Polished Marble Block",
+  "block.dumbmod.weathered_marble_bricks_stone": "Mildly Weathered Marble Bricks",
+  "block.dumbmod.weathered_marble_bricks_sttwo": "Extremely Weathered Marble Bricks",
+
 
 
   "block.dumbmod.blue_fathom_log": "Fathom Log",
