@@ -3,7 +3,11 @@
   "values": [
     "dumbmod:marble_block",
     "dumbmod:weathered_marble_bricks_stone",
+    "dumbmod:weathered_marble_bricks_stone_slab",
     "dumbmod:weathered_marble_bricks_sttwo",
+    "dumbmod:weathered_marble_bricks_sttwo_slab",
+    "dumbmod:marble_brick_stairs",
+    "dumbmod:marble_brick_slab",
     "dumbmod:polished_marble_block",
     "dumbmod:marble_bricks",
     "dumbmod:arowqua_brick",

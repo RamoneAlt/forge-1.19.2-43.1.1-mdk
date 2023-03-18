@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dumbmod:block/weathered_marble_bricks_sttwo_slab"
+    },
+    "type=double": {
+      "model": "dumbmod:block/weathered_marble_bricks_sttwo"
+    },
+    "type=top": {
+      "model": "dumbmod:block/weathered_marble_bricks_sttwo_slab_top"
+    }
+  }
+}

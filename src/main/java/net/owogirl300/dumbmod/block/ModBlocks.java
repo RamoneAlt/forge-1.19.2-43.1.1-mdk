@@ -43,31 +43,35 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MARBLE_BRICKS = registerBlock("marble_bricks",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+                    .strength(0.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
 
     public static final RegistryObject<Block> WEATHERED_MARBLE_BRICKS_STONE = registerBlock("weathered_marble_bricks_stone",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+                    .strength(0.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
 
     public static final RegistryObject<Block> WEATHERED_MARBLE_BRICKS_STONE_SLAB = registerBlock("weathered_marble_bricks_stone_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
 
     public static final RegistryObject<Block> WEATHERED_MARBLE_BRICKS_STTWO = registerBlock("weathered_marble_bricks_sttwo",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+                    .strength(0.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+
+    public static final RegistryObject<Block> WEATHERED_MARBLE_BRICKS_STTWO_SLAB = registerBlock("weathered_marble_bricks_sttwo_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
 
     public static final RegistryObject<Block> MARBLE_BUTTON = registerBlock("marble_button",
-            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(0.9f).requiresCorrectToolForDrops().noCollission()), ModCreativeModeTab.DUMB_TAB);
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.1f).requiresCorrectToolForDrops().noCollission()), ModCreativeModeTab.DUMB_TAB);
 
     public static final RegistryObject<Block> MARBLE_BRICK_SLAB = registerBlock("marble_brick_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.DUMB_TAB);
 
     public static final RegistryObject<Block> MARBLE_BRICK_STAIRS = registerBlock("marble_brick_stairs",
             () -> new StairBlock(() -> ModBlocks.MARBLE_BRICKS.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.STONE).strength(3f).requiresCorrectToolForDrops()),
+                    BlockBehaviour.Properties.of(Material.STONE).strength(0.5f).requiresCorrectToolForDrops()),
             ModCreativeModeTab.DUMB_TAB);
 
 
