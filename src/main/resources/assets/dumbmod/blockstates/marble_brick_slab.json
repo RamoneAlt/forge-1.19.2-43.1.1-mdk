@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dumbmod:block/marble_brick_slab"
+    },
+    "type=double": {
+      "model": "dumbmod:block/marble_bricks"
+    },
+    "type=top": {
+      "model": "dumbmod:block/marble_brick_slab_top"
+    }
+  }
+}

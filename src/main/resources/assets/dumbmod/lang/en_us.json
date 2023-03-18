@@ -39,12 +39,15 @@
   /* Marble Blocks */
 
   "block.dumbmod.marble_button": "Marble Button",
+  "block.dumbmod.marble_brick_slab": "Marble Bricks Slab",
+  "block.dumbmod.marble_brick_stairs": "Marble Bricks Stairs",
   "block.dumbmod.marble_ore": "Marble Ore",
   "block.dumbmod.deepslate_marble_ore": "Deepslate Marble Ore",
   "block.dumbmod.marble_block": "Block of Marble",
   "block.dumbmod.marble_bricks": "Marble Bricks",
   "block.dumbmod.polished_marble_block": "Polished Marble Block",
   "block.dumbmod.weathered_marble_bricks_stone": "Mildly Weathered Marble Bricks",
+  "block.dumbmod.weathered_marble_bricks_stone_slab": "Mildly Weathered Marble Bricks Slab",
   "block.dumbmod.weathered_marble_bricks_sttwo": "Extremely Weathered Marble Bricks",
 
 

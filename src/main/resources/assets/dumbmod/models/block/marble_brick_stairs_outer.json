@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "dumbmod:block/marble_bricks",
+    "top": "dumbmod:block/marble_bricks",
+    "side": "dumbmod:block/marble_bricks"
+  }
+}
